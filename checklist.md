@@ -3,10 +3,16 @@
 ### Partitioning
 - [ ] Encrypted partitioning following example (mandatory and bonus have different partitioning).
 
+### ufw
+- [ ] ufw enabled and running on startup.
+- [ ] Port 4242 open for tcp.
+
+### apparmor
+- [ ] apparmor enabled and running on startup.
+
 ### SSH
 - [ ] SSH service running only on port 4242. 
 - [ ] Impossible to connect with SSH as root.
-- [ ] Port 4242 open in ufw.
 
 ### users | hostname | groups
 - [ ] Hostname as your intra login ending with 42 (pdrago42).
@@ -26,6 +32,7 @@
     - [ ] Not include the name of the user.
     - [ ] Root must comply to all above policies.
     - [ ] Contain at least 7 characters that are not part of the former password.
+
 ### Sudo configuration
 - [ ] Authentication using sudo has to be limited to 3 attempts in the event of an incorrect password.
 - [ ] A custom message of your choice has to be displayed if an error due to a wrong password occurs when using sudo.
@@ -48,6 +55,7 @@
 - [ ] The number of commands executed with the sudo program.
 
 ### Bonus
+- [ ] Port 80 open on ufw
 - [ ] Partition accordingly to bonus subject example.
 - [ ] Setup functional Wordpress website with:
     - [ ] lighttpd
