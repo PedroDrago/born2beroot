@@ -23,9 +23,9 @@ In this project, the OS that we are going to virtualize is a Linux Distribution,
 
 ### Partitioning
 When installing your distribution of choice, you will face a step that is called **Partitioning**. Partitioning is a logical division of a persistent drive (HD, SSD, etc.) that is treated as a separate Unit by the OS. In short, it is like if you divided your Disk into several organized subdisks, but in a logical way, i.e., divided by software and not physically. Partitions can have a few characteristics, like:
-- Mount points: allow data stored on separated partitions to be accessed by the OS filesystem.
-- Size: The amount of bytes that the partition could store.
-- File system:  The specific system that will deal with files in the OS could be ext4 for common storage partitions or something for a different purpose like the SWAP area, which is instead for use when the RAM is full, and you need immediately a few more memory, than it uses the space on the disk as RAM. 
+- **Mount points**: allow data stored on separated partitions to be accessed by the OS filesystem.
+- **Size**: The amount of bytes that the partition could store.
+- **File system**:  The specific system that will deal with files in the OS could be ext4 for common storage partitions or something for a different purpose like the SWAP area, which is instead for use when the RAM is full, and you need immediately a few more memory, than it uses the space on the disk as RAM. 
 
 <p align="center">
 <img src="http://www.novell.com/zh-cn/documentation/nw5/nw5/usserver/sdiskenu/graphics/dsk_002a.gif">
@@ -50,6 +50,6 @@ On Linux, the way to download and get access to applications and packages is thr
 
 ### Services (daemons)
 Services (or daemons) are programs that run in the background without the need for constant execution from a user. In born2beroot there are 3 mandatory services to use:
-- ufw: ufw (Uncomplicated Firewall) is a firewall service, which is a security service that monitors and controls incoming and outgoing network traffic and chooses to allow or block traffic and ports. For example, with ufw you can allow port 443 (the standard HTTPS port) so that HTTPS can be served by this machine and block port 80 so that HTTP cannot be served.
-- SSH: SSH stands for Secure Shell, and it is a network protocol intended for remote access to machines in a very secure way, even if the network used isn't secure. It is extremely useful for accessing servers without the need to go physically to the server location.
-- Cron: Cron is a service that allows for scheduling actions on specific dates and times. For example, you could set a cron job to delete all files from a specific directory at 21:00 every day.
+- **ufw**: ufw (Uncomplicated Firewall) is a firewall service, which is a security service that monitors and controls incoming and outgoing network traffic and chooses to allow or block traffic and ports. For example, with ufw you can allow port 443 (the standard HTTPS port) so that HTTPS can be served by this machine and block port 80 so that HTTP cannot be served.
+- **SSH**: SSH stands for Secure Shell, and it is a network protocol intended for remote access to machines in a very secure way, even if the network used isn't secure. It is extremely useful for accessing servers without the need to go physically to the server location.
+- **Cron**: Cron is a service that allows for scheduling actions on specific dates and times. For example, you could set a cron job to delete all files from a specific directory at 21:00 every day.
